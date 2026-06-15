@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Code2 } from 'lucide-react';
+import { Code2 } from 'lucide-react';
 import ProjectAnimationSVG from './ProjectAnimationSVG';
 
 export default function ProjectCard({ title, description, tech, delay = 0 }) {
@@ -25,7 +25,6 @@ export default function ProjectCard({ title, description, tech, delay = 0 }) {
             <Code2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
             <h3 className="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">{title}</h3>
           </div>
-          <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-cyan-400 transition-colors flex-shrink-0 mt-0.5" />
         </div>
 
         <p className="text-gray-400 text-sm leading-relaxed mb-4">{description}</p>
